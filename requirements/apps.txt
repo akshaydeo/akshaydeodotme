@@ -1,0 +1,8 @@
+django
+gunicorn
+MySql-python
+simplejson
+south
+django-admin-tools
+django-debug-toolbar
+fabric
