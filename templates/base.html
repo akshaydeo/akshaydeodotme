@@ -44,10 +44,9 @@
 			<div class="subnav subnav-fixed">
 				<ul class="nav nav-pills">				
 					<li {% if tab_id == '1' %} class="active" {% endif %} style="font-size:18px; font-weight:bold;"><a href="/">Home</a></li>
-					<li {% if tab_id == '2' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="/projects">Projects</a></li>
-					<li {% if tab_id == '3' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="">Work Experience</a></li>
-					<li {% if tab_id == '4' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="">Academics</a></li>
-					<li {% if tab_id == '5' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="">Tech Blog</a></li>		
+					<li {% if tab_id == '2' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="/projects">Projects</a></li>					
+					<li {% if tab_id == '3' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="">Academics</a></li>
+					<li {% if tab_id == '4' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="">Tech Blog</a></li>		
 				</ul>				
 			</div>	
 			<hr>
@@ -56,14 +55,16 @@
 		<div class="container">
 			{% block container %}{% endblock %}
 		</div>
-		<div class="navbar navbar-fixed-bottom">
-			<div class="navbar-inner">
-				<div class="container">					
-					<!-- Be sure to leave the brand out there if you want it shown -->
-					<p>Copyright 2012 Akshay Deo | Proudly developed using Django, Admin-tools, Debug-Toolbar, South, MySql, Apache, mod-wsgi, Git, Fabric, Twitter Bootstrap and Sublime2 </p>
-				</div>
-			</div>
+		
+		<div class="container">		
+			<span class="label" style="font-family: 'Crete Round', serif; font-size:20px; font-weight:400px; line-height:150%">Get in touch</span>
+			<a href="http://facebook.com/akshaymdeo" target="_blank"><img src="{{ MEDIA_URL }}img/social_media/facebook32.png" alt=""/></a>
+			<a href="http://twitter.com/akshay_deo" target="_blank"><img src="{{ MEDIA_URL }}img/social_media/tumbler32.png" alt=""/></a>
+			<a href="http://in.linkedin.com/in/akshaymdeo" target="_blank"><img src="{{ MEDIA_URL }}img/social_media/linkedin32.png" alt=""/></a>
+			<a href="https://plus.google.com/115489622487932620000/" target="_blank"><img src="{{ MEDIA_URL }}img/social_media/google32.png" alt=""/></a>
+			<a href="http://blog.akshaydeo.me" target="_blank"><img src="{{ MEDIA_URL }}img/social_media/wordpress32.png" alt=""/></a>			
+			<!-- Be sure to leave the brand out there if you want it shown -->
+			<p>Copyright 2012 Akshay Deo | Proudly developed using Django, Admin-tools, Debug-Toolbar, South, MySql, Apache, mod-wsgi, Git, Fabric, Twitter Bootstrap and Sublime2 </p>
 		</div>
-
 	</body>
 </html>
