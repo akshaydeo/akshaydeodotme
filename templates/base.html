@@ -35,23 +35,24 @@
 			<div class="navbar-inner">
 				<div class="container">					
 					<!-- Be sure to leave the brand out there if you want it shown -->
-					<a class="brand" href="#" style="font-family: 'Russo One', sans-serif; font-size:30px; color:#BDBDBD; ">Akshay Deo</a>
+					<a class="brand" href="#" style="font-family: 'Russo One', sans-serif; font-size:30px; color:#BDBDBD; ">Akshay Deo</a>						
 				</div>
-			</div>
+
+			</div>		
 		</div>
 		<div class="container">
 			<div class="subnav subnav-fixed">
 				<ul class="nav nav-pills">				
-					<li class="active" style="font-size:18px; font-weight:bold;"><a href="">Home</a></li>
-					<li class="" style="font-size:18px; font-weight:bold; "><a href="">Projects</a></li>
-					<li class="" style="font-size:18px; font-weight:bold; "><a href="">Work Experience</a></li>
-					<li class="" style="font-size:18px; font-weight:bold; "><a href="">Academics</a></li>
-					<li class="" style="font-size:18px; font-weight:bold; "><a href="">Tech Blog</a></li>		
+					<li {% if tab_id == '1' %} class="active" {% endif %} style="font-size:18px; font-weight:bold;"><a href="/">Home</a></li>
+					<li {% if tab_id == '2' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="/projects">Projects</a></li>
+					<li {% if tab_id == '3' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="">Work Experience</a></li>
+					<li {% if tab_id == '4' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="">Academics</a></li>
+					<li {% if tab_id == '5' %} class="active" {% endif %} style="font-size:18px; font-weight:bold; "><a href="">Tech Blog</a></li>		
 				</ul>				
 			</div>	
-			<hr>		
+			<hr>
 		</div>
-		
+
 		<div class="container">
 			{% block container %}{% endblock %}
 		</div>
