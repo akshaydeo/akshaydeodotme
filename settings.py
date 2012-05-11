@@ -12,8 +12,7 @@ DEBUG = ast.literal_eval(config.get('debug','value'))
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Akshay Deo', 'akshay@rainingclouds.com'),
-    ('Karti'     , 'karti@rainingclouds.com'),
+    ('Akshay Deo', 'akshaymdeo@gmail.com'),
 )
 
 MANAGERS = ADMINS
