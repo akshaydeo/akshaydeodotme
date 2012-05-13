@@ -6,3 +6,6 @@ def index(request):
 
 def projects(request):
 	return render_to_response("dashboard/projects.html", {'tab_id' : '2'}, context_instance = RequestContext(request))
+
+def academics(request):
+	return render_to_response("dashboard/academics.html", {'tab_id' : '3'}, context_instance = RequestContext(request))
