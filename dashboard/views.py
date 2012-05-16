@@ -9,3 +9,6 @@ def projects(request):
 
 def academics(request):
 	return render_to_response("dashboard/academics.html", {'tab_id' : '3'}, context_instance = RequestContext(request))
+
+def accolades(request):
+	return render_to_response("dashboard/accolades.html", {'tab_id' : '4'}, context_instance = RequestContext(request))
