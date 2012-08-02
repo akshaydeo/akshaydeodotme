@@ -12,3 +12,7 @@ def academics(request):
 
 def accolades(request):
 	return render_to_response("dashboard/accolades.html", {'tab_id' : '4'}, context_instance = RequestContext(request))
+
+def publications(request):
+        return render_to_response("dashboard/publications.html", {'tab_id' : '4'}, context_instance = RequestContext(request))
+
